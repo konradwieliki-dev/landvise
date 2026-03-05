@@ -43,6 +43,13 @@ export default function ConsultationForm() {
         ...payload,
       });
 
+      // 3. Wyślij email powiadomienie
+      await fetch("/api/send-lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ type: "konsultacja", ...payload }),
+      });
+
       if (response.ok) {
         setStatus("success");
         (e.target as HTMLFormElement).reset();
