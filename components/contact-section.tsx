@@ -34,8 +34,8 @@ export default function ContactSection() {
               </svg>
             </div>
             <h3 className="font-semibold text-[#1c1917] mb-2">Telefon</h3>
-            <a href="tel:+48000000000" className="text-[#2d6a4f] hover:underline text-sm">
-              +48 000 000 000
+            <a href="tel:+48507183806" className="text-[#2d6a4f] hover:underline text-sm">
+              +48 507 183 806
             </a>
           </div>
 
