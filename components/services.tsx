@@ -36,9 +36,15 @@ export default function Services() {
             </div>
             <a
               href="#wycena"
-              className="block text-center font-semibold py-3.5 rounded-lg bg-[#2d6a4f] text-white hover:bg-[#40916c] transition-all duration-200 text-sm mt-auto"
+              className="block text-center font-semibold py-3.5 rounded-lg bg-[#2d6a4f] text-white hover:bg-[#40916c] transition-all duration-200 text-sm"
             >
               Zapytaj o wycenę
+            </a>
+            <a
+              href="#konsultacja"
+              className="block text-center font-medium py-3 rounded-lg border border-[#2d6a4f] text-[#2d6a4f] hover:bg-[#2d6a4f] hover:text-white transition-all duration-200 text-sm mt-3"
+            >
+              Umów bezpłatną konsultację
             </a>
           </div>
 
@@ -56,16 +62,22 @@ export default function Services() {
               Audyt Wykonalności
             </h3>
             <p className="text-sm text-white/70 leading-relaxed mb-6 flex-grow">
-              Kompleksowa analiza wykonalności inwestycji. Sprawdzamy MPZP,
-              warunki zabudowy, media, dostęp do drogi, ograniczenia prawne
-              i środowiskowe. Dostajesz konkretną rekomendację: kupować czy nie.
+              Kompleksowy audyt wykonalności – fundament świadomej decyzji
+              inwestycyjnej. Pełna analiza planistyczna, środowiskowa i formalna
+              rekomendowana dla każdego projektu inwestycyjnego.
             </p>
-            <div className="text-sm text-white/50 mb-8">Realizacja: 7–14 dni</div>
+            <div className="text-sm text-white/50 mb-8">Realizacja: 2–3 tygodnie</div>
             <a
               href="#wycena"
-              className="block text-center font-semibold py-3.5 rounded-lg bg-white text-[#1b4332] hover:bg-[#95d5b2] transition-all duration-200 text-sm mt-auto"
+              className="block text-center font-semibold py-3.5 rounded-lg bg-white text-[#1b4332] hover:bg-[#95d5b2] transition-all duration-200 text-sm"
             >
               Zapytaj o wycenę
+            </a>
+            <a
+              href="#konsultacja"
+              className="block text-center font-medium py-3 rounded-lg border border-white/30 text-white/80 hover:border-white/60 hover:text-white transition-all duration-200 text-sm mt-3"
+            >
+              Umów bezpłatną konsultację
             </a>
           </div>
 
@@ -75,21 +87,21 @@ export default function Services() {
               Poziom 3
             </div>
             <h3 className="text-xl font-bold text-[#1c1917] tracking-tight mb-4">
-              Pełne Due Diligence
+              Rozszerzony audyt wykonalności
             </h3>
             <p className="text-sm text-neutral-600 leading-relaxed mb-6 flex-grow">
-              Pełny audyt prawny, techniczny i finansowy gruntu. Dla
-              inwestorów instytucjonalnych i projektów wymagających najwyższego
-              poziomu weryfikacji przed transakcją.
+              Rozbudowana forma audytu wykonalności uwzględniająca analizę
+              aspektów specyficznych dla Twojego projektu. Dostępny wyłącznie
+              po wykonaniu audytu Poziomu 2.
             </p>
             <div className="text-sm text-neutral-500 mb-8">
-              Realizacja: 21–30 dni
+              Harmonogram ustalany indywidualnie
             </div>
             <a
-              href="#wycena"
+              href="#konsultacja"
               className="block text-center font-semibold py-3.5 rounded-lg bg-[#2d6a4f] text-white hover:bg-[#40916c] transition-all duration-200 text-sm mt-auto"
             >
-              Zapytaj o wycenę
+              Umów konsultację
             </a>
           </div>
 
@@ -99,12 +111,12 @@ export default function Services() {
               Dodatkowo
             </div>
             <h3 className="text-xl font-bold text-[#1c1917] tracking-tight mb-4">
-              Wsparcie Transakcyjne
+              Wsparcie w całym procesie transakcyjnym
             </h3>
             <p className="text-sm text-neutral-600 leading-relaxed mb-6 flex-grow">
-              Towarzyszymy Ci od analizy aż do podpisania umowy. Negocjacje,
-              koordynacja prawna, kontakt z notariuszem – obsługujemy cały
-              proces zakupu.
+              W przypadku bardziej złożonych projektów oferujemy rozszerzone
+              wsparcie obejmujące kolejne etapy procesu transakcyjnego – od
+              analizy wykonalności po przygotowanie projektu do realizacji.
             </p>
             <div className="text-sm text-neutral-500 mb-8">
               Wycena indywidualna

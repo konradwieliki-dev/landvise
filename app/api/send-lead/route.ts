@@ -7,24 +7,32 @@ export async function POST(request: Request) {
   const body = await request.json();
   const { type, name, email, ...rest } = body;
 
-  const isWycena = type === "wycena";
-  const subject = isWycena
-    ? `Nowe zapytanie o wycenę — ${name}`
-    : `Nowa prośba o konsultację — ${name}`;
+  const subjectMap: Record<string, string> = {
+    wycena: `Nowe zapytanie o wycenę — ${name}`,
+    konsultacja: `Nowa prośba o konsultację — ${name}`,
+    kontakt: `Nowa wiadomość kontaktowa — ${name}`,
+  };
+  const subject = subjectMap[type] || `Nowa wiadomość — ${name}`;
 
-  const details = isWycena
-    ? `
+  let details = "";
+  if (type === "wycena") {
+    details = `
 <b>Poziom analizy:</b> ${rest.level}<br/>
 <b>Typ nieruchomości:</b> ${rest.property_type}<br/>
 <b>Numer działki:</b> ${rest.plot_number || "—"}<br/>
 <b>Lokalizacja:</b> ${rest.location}<br/>
 <b>Powierzchnia:</b> ${rest.area || "—"}<br/>
 <b>Opis projektu:</b> ${rest.message || "—"}
-`
-    : `
-<b>Temat:</b> ${rest.topic}<br/>
-<b>Wiadomość:</b> ${rest.message || "—"}
 `;
+  } else if (type === "konsultacja") {
+    details = `
+<b>Typ klienta:</b> ${rest.topic}<br/>
+<b>Lokalizacja działki:</b> ${rest.location || "—"}<br/>
+<b>Opis projektu:</b> ${rest.message || "—"}
+`;
+  } else {
+    details = `<b>Wiadomość:</b> ${rest.message || "—"}`;
+  }
 
   const html = `
 <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto;">

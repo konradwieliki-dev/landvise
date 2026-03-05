@@ -18,14 +18,21 @@ export default function Cooperation() {
       title: "Analiza",
       subtitle: null,
       description:
-        "Przeprowadzamy kompleksową analizę gruntu na wybranym poziomie szczegółowości.",
+        "Przeprowadzamy kompleksową analizę nieruchomości zgodnie z ustalonym zakresem.",
     },
     {
       number: "04",
-      title: "Raport i rekomendacja",
+      title: "Raport",
       subtitle: null,
       description:
-        "Otrzymujesz przejrzysty raport z konkretną rekomendacją: kupować czy nie kupować.",
+        "Otrzymujesz szczegółowy raport z wnioskami i rekomendacjami.",
+    },
+    {
+      number: "05",
+      title: "Wsparcie po analizie",
+      subtitle: null,
+      description:
+        "Omawiamy wyniki i odpowiadamy na wszystkie pytania. Jesteśmy dostępni, jeśli potrzebujesz omówienia wyników, dodatkowych wyjaśnień lub wsparcia w kolejnych krokach.",
     },
   ];
 
@@ -37,16 +44,16 @@ export default function Cooperation() {
             Proces
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-[#1c1917] mt-3 tracking-tight">
-            Jak wygląda nasza
+            Jak wygląda
             <br />
-            <span className="text-[#2d6a4f]">współpraca?</span>
+            <span className="text-[#2d6a4f]">współpraca</span>
           </h2>
           <p className="text-neutral-600 mt-4 text-lg leading-relaxed">
-            Przejrzysty proces od pierwszego kontaktu do finalnej rekomendacji.
+            Przejrzysty, 5-etapowy proces. Od pierwszej rozmowy do gotowego raportu – wiesz dokładnie, czego się spodziewać.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {steps.map((step, index) => (
             <div key={index} className="relative">
               {index < steps.length - 1 && (

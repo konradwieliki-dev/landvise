@@ -14,7 +14,8 @@ export default function ConsultationForm() {
     const payload = {
       name: formData.get("name") as string,
       email: formData.get("email") as string,
-      topic: formData.get("topic") as string,
+      topic: formData.get("client_type") as string,
+      location: formData.get("location") as string,
       message: formData.get("message") as string,
     };
 
@@ -29,7 +30,7 @@ export default function ConsultationForm() {
           body: JSON.stringify({
             email: payload.email,
             name: payload.name,
-            details: `--- BEZPŁATNA KONSULTACJA ---\nTemat: ${payload.topic}\nWiadomość: ${payload.message}`,
+            details: `--- BEZPŁATNA KONSULTACJA ---\nTyp klienta: ${payload.topic}\nLokalizacja: ${payload.location}\nOpis projektu: ${payload.message}`,
             knowledge_profile_id:
               process.env.NEXT_PUBLIC_KNOWLEDGE_PROFILE_ID ||
               "fa68e85f-4d1a-4dc7-a42e-f0cf543a4bd6",
@@ -71,29 +72,43 @@ export default function ConsultationForm() {
               Bezpłatna konsultacja
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-white mt-3 tracking-tight">
-              Porozmawiajmy o
+              Gotowi na mądrą
               <br />
-              Twoim projekcie
+              decyzję inwestycyjną?
             </h2>
             <p className="text-white/70 mt-4 text-lg leading-relaxed">
-              Umów się na bezpłatną 30-minutową konsultację. Omówimy Twój
-              projekt i doradzimy, jaki poziom analizy będzie dla Ciebie
-              najlepszy.
+              Umów bezpłatną 30-minutową konsultację. Omówimy Twój projekt
+              i sprawdzimy, jak możemy Ci pomóc.
             </p>
 
-            <div className="mt-10 space-y-4">
-              {[
-                "Bez zobowiązań",
-                "30 minut on-line lub telefonicznie",
-                "Konkretne wskazówki już na spotkaniu",
-              ].map((item) => (
-                <div key={item} className="flex items-center gap-3">
-                  <svg className="w-5 h-5 text-[#95d5b2] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-white/80 text-sm">{item}</span>
+            <div className="mt-10 space-y-5">
+              <div className="flex items-start gap-3">
+                <svg className="w-5 h-5 text-[#95d5b2] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <div>
+                  <p className="text-white/90 text-sm font-medium">Bez zobowiązań</p>
+                  <p className="text-white/60 text-sm">Konsultacja jest bezpłatna i niezobowiązująca</p>
                 </div>
-              ))}
+              </div>
+              <div className="flex items-start gap-3">
+                <svg className="w-5 h-5 text-[#95d5b2] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <div>
+                  <p className="text-white/90 text-sm font-medium">30 minut</p>
+                  <p className="text-white/60 text-sm">Krótka, konkretna rozmowa o Twoim projekcie</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <svg className="w-5 h-5 text-[#95d5b2] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <div>
+                  <p className="text-white/90 text-sm font-medium">Poufność</p>
+                  <p className="text-white/60 text-sm">Wszystkie informacje traktujemy jako poufne</p>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -104,7 +119,7 @@ export default function ConsultationForm() {
               className="bg-white rounded-2xl p-8 lg:p-10 shadow-xl"
             >
               <h3 className="text-xl font-bold text-[#1c1917] mb-6">
-                Umów konsultację
+                Formularz konsultacji
               </h3>
 
               <div className="space-y-5">
@@ -138,24 +153,38 @@ export default function ConsultationForm() {
                 </div>
 
                 <div>
-                  <label htmlFor="consult-topic" className="block text-sm font-medium text-neutral-700 mb-1.5">
-                    Temat konsultacji
+                  <label htmlFor="consult-client-type" className="block text-sm font-medium text-neutral-700 mb-1.5">
+                    Typ klienta
                   </label>
                   <select
-                    id="consult-topic"
-                    name="topic"
+                    id="consult-client-type"
+                    name="client_type"
+                    required
                     className="w-full px-4 py-3 rounded-lg border border-neutral-200 focus:border-[#2d6a4f] focus:ring-2 focus:ring-[#2d6a4f]/20 outline-none transition-all text-sm"
                   >
-                    <option value="Analiza gruntu">Analiza gruntu</option>
-                    <option value="Due diligence">Due diligence</option>
-                    <option value="Wsparcie transakcyjne">Wsparcie transakcyjne</option>
-                    <option value="Inne">Inne</option>
+                    <option value="Inwestor prywatny">Inwestor prywatny</option>
+                    <option value="Firma deweloperska">Firma deweloperska</option>
+                    <option value="Fundusz inwestycyjny">Fundusz inwestycyjny</option>
+                    <option value="Inny">Inny</option>
                   </select>
                 </div>
 
                 <div>
+                  <label htmlFor="consult-location" className="block text-sm font-medium text-neutral-700 mb-1.5">
+                    Lokalizacja działki (opcjonalnie)
+                  </label>
+                  <input
+                    type="text"
+                    id="consult-location"
+                    name="location"
+                    className="w-full px-4 py-3 rounded-lg border border-neutral-200 focus:border-[#2d6a4f] focus:ring-2 focus:ring-[#2d6a4f]/20 outline-none transition-all text-sm"
+                    placeholder="np. Warszawa, gmina Piaseczno"
+                  />
+                </div>
+
+                <div>
                   <label htmlFor="consult-message" className="block text-sm font-medium text-neutral-700 mb-1.5">
-                    Wiadomość (opcjonalnie)
+                    Opis projektu
                   </label>
                   <textarea
                     id="consult-message"
