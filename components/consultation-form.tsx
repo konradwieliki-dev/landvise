@@ -63,8 +63,16 @@ export default function ConsultationForm() {
   };
 
   return (
-    <section id="konsultacja" className="py-24 lg:py-32 bg-[#1b4332]">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section id="konsultacja" className="relative py-24 lg:py-32">
+      <div className="absolute inset-0">
+        <img
+          src="/konsultacja.png"
+          alt=""
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-[#1b4332]/85" />
+      </div>
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left */}
           <div>
