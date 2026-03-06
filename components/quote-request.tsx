@@ -107,8 +107,8 @@ export default function QuoteRequest() {
                   <h3 className="text-[#1c1917] font-semibold">Masz dokumenty?</h3>
                   <p className="text-neutral-500 text-sm mt-1">
                     Wyślij wypis z MPZP, mapę lub KW na{" "}
-                    <a href="mailto:kontakt@landvise.com" className="text-[#2d6a4f] font-medium hover:underline">
-                      kontakt@landvise.com
+                    <a href="mailto:kontakt@landvise.pl" className="text-[#2d6a4f] font-medium hover:underline">
+                      kontakt@landvise.pl
                     </a>
                   </p>
                 </div>
@@ -281,7 +281,7 @@ export default function QuoteRequest() {
                 {status === "error" && (
                   <div className="bg-red-50 border border-red-200 rounded-lg p-4">
                     <p className="text-red-800 text-sm font-medium">
-                      Coś poszło nie tak. Spróbuj ponownie lub napisz na kontakt@landvise.com
+                      Coś poszło nie tak. Spróbuj ponownie lub napisz na kontakt@landvise.pl
                     </p>
                   </div>
                 )}

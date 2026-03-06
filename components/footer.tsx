@@ -55,13 +55,13 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3">
               <li>
-                <a href="mailto:kontakt@landvise.com" className="text-white/50 hover:text-[#40916c] text-sm transition-colors">
-                  kontakt@landvise.com
+                <a href="mailto:kontakt@landvise.pl" className="text-white/50 hover:text-[#40916c] text-sm transition-colors">
+                  kontakt@landvise.pl
                 </a>
               </li>
               <li>
-                <a href="tel:+48000000000" className="text-white/50 hover:text-[#40916c] text-sm transition-colors">
-                  +48 000 000 000
+                <a href="tel:+48507183806" className="text-white/50 hover:text-[#40916c] text-sm transition-colors">
+                  +48 507 183 806
                 </a>
               </li>
             </ul>
