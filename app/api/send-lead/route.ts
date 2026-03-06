@@ -50,7 +50,7 @@ export async function POST(request: Request) {
     to: "kontakt@landvise.pl",
     subject,
     html,
-    reply_to: email,
+    replyTo: email,
   });
 
   if (error) {
