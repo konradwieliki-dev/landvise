@@ -44,11 +44,9 @@ export default function Cooperation() {
             Proces
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-[#1c1917] mt-3 tracking-tight">
-            Jak wygląda
-            <br />
-            <span className="text-[#2d6a4f]">współpraca</span>
+            Jak wygląda <span className="text-[#2d6a4f]">współpraca</span>
           </h2>
-          <p className="text-neutral-600 mt-4 text-lg leading-relaxed">
+          <p className="text-neutral-600 mt-4 text-lg leading-relaxed whitespace-nowrap">
             Przejrzysty, 5-etapowy proces. Od pierwszej rozmowy do gotowego raportu – wiesz dokładnie, czego się spodziewać.
           </p>
         </div>

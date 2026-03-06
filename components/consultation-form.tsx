@@ -85,8 +85,9 @@ export default function ConsultationForm() {
               decyzję inwestycyjną?
             </h2>
             <p className="text-white/70 mt-4 text-lg leading-relaxed">
-              Umów bezpłatną 30-minutową konsultację. Omówimy Twój projekt
-              i sprawdzimy, jak możemy Ci pomóc.
+              Umów bezpłatną 30-minutową konsultację.
+              <br />
+              Omówimy Twój projekt i sprawdzimy, jak możemy Ci pomóc.
             </p>
 
             <div className="mt-10 space-y-5">

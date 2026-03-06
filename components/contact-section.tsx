@@ -44,7 +44,9 @@ export default function ContactSection() {
               <span className="text-[#2d6a4f]">Twoim projekcie</span>
             </h2>
             <p className="text-neutral-600 mt-4 text-lg leading-relaxed">
-              Masz pytania lub chcesz omówić szczegóły projektu? Skontaktuj się bezpośrednio.
+              Masz pytania lub chcesz omówić szczegóły projektu?
+              <br />
+              Skontaktuj się bezpośrednio.
             </p>
 
             <div className="mt-10 space-y-6">
