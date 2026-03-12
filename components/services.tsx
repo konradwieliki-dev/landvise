@@ -37,16 +37,16 @@ export default function Services() {
               Realizacja: do 2 tygodni
             </div>
             <a
-              href="#wycena"
+              href="#konsultacja"
               className="block text-center font-semibold py-3.5 rounded-lg bg-[#2d6a4f] text-white hover:bg-[#40916c] transition-all duration-200 text-sm"
             >
-              Zapytaj o wycenę
+              Umów bezpłatną konsultację
             </a>
             <a
-              href="#konsultacja"
+              href="#wycena"
               className="block text-center font-medium py-3 rounded-lg border border-[#2d6a4f] text-[#2d6a4f] hover:bg-[#2d6a4f] hover:text-white transition-all duration-200 text-sm mt-3"
             >
-              Umów bezpłatną konsultację
+              Zapytaj o wycenę
             </a>
           </div>
 
@@ -125,7 +125,7 @@ export default function Services() {
             </div>
             <a
               href="#konsultacja"
-              className="block text-center font-semibold py-3.5 rounded-lg border border-[#2d6a4f] text-[#2d6a4f] hover:bg-[#2d6a4f] hover:text-white transition-all duration-200 text-sm mt-auto"
+              className="block text-center font-semibold py-3.5 rounded-lg bg-[#2d6a4f] text-white hover:bg-[#40916c] transition-all duration-200 text-sm mt-auto"
             >
               Umów konsultację
             </a>
