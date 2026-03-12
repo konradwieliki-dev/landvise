@@ -38,13 +38,13 @@ export default function Services() {
             </div>
             <a
               href="#konsultacja"
-              className="block text-center font-semibold py-3.5 rounded-lg bg-[#2d6a4f] text-white hover:bg-[#40916c] transition-all duration-200 text-sm"
+              className="block text-center font-medium py-3 rounded-lg border border-[#2d6a4f] text-[#2d6a4f] hover:bg-[#2d6a4f] hover:text-white transition-all duration-200 text-sm"
             >
               Umów bezpłatną konsultację
             </a>
             <a
               href="#wycena"
-              className="block text-center font-medium py-3 rounded-lg border border-[#2d6a4f] text-[#2d6a4f] hover:bg-[#2d6a4f] hover:text-white transition-all duration-200 text-sm mt-3"
+              className="block text-center font-semibold py-3.5 rounded-lg bg-[#2d6a4f] text-white hover:bg-[#40916c] transition-all duration-200 text-sm mt-3"
             >
               Zapytaj o wycenę
             </a>
