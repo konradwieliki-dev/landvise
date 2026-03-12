@@ -10,7 +10,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#1b4332]/90 via-[#1b4332]/70 to-[#1b4332]/40" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-32">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-32 pb-16">
         <div className="max-w-2xl">
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 mb-8">
             <div className="w-2 h-2 bg-[#95d5b2] rounded-full" />
