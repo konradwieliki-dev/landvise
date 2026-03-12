@@ -182,10 +182,10 @@ export default function QuoteRequest() {
                       className="w-full px-4 py-3 rounded-lg border border-neutral-200 focus:border-[#2d6a4f] focus:ring-2 focus:ring-[#2d6a4f]/20 outline-none transition-all text-sm"
                     >
                       <option value="Poziom 1 – Wstępna identyfikacja kluczowych ryzyk">
-                        Poziom 1 – Wstępna identyfikacja kluczowych ryzyk
+                        Poziom nr 1
                       </option>
                       <option value="Poziom 2 – Audyt Wykonalności">
-                        Poziom 2 – Audyt Wykonalności
+                        Poziom nr 2
                       </option>
                     </select>
                   </div>
