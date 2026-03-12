@@ -1,6 +1,6 @@
 export default function Services() {
   return (
-    <section id="uslugi" className="py-24 lg:py-32 bg-white">
+    <section id="uslugi" className="pt-12 pb-24 lg:pt-16 lg:pb-32 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="max-w-2xl mb-16">
           <span className="text-[#2d6a4f] text-sm font-semibold uppercase tracking-wider">

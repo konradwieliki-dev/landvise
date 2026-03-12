@@ -30,7 +30,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="kontakt" className="py-24 lg:py-32 bg-white">
+    <section id="kontakt" className="pt-12 pb-24 lg:pt-16 lg:pb-32 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* Left - info */}
