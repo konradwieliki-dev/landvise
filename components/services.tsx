@@ -11,9 +11,11 @@ export default function Services() {
             <br />
             <span className="text-[#2d6a4f]">Jeden cel: pewność decyzji.</span>
           </h2>
-          <p className="text-neutral-600 mt-4 text-lg leading-relaxed">
-            Każda inwestycja zaczyna się od gruntu. Wybierz poziom analizy
-            dopasowany do etapu Twojego projektu.
+          <p className="text-neutral-600 mt-4 text-lg leading-relaxed whitespace-nowrap">
+            Każda inwestycja zaczyna się od gruntu. Wybierz poziom analizy dopasowany do etapu Twojego projektu.
+          </p>
+          <p className="text-neutral-600 mt-2 text-lg leading-relaxed whitespace-nowrap">
+            Nie wiesz, którego poziomu potrzebujesz? Zacznij od bezpłatnej konsultacji.
           </p>
         </div>
 
