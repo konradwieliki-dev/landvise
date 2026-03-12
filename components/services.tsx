@@ -34,7 +34,7 @@ export default function Services() {
               iść dalej.
             </p>
             <div className="text-sm text-neutral-500 mb-8">
-              Realizacja: 3–5 dni
+              Realizacja: do 2 tygodni
             </div>
             <a
               href="#wycena"
@@ -68,7 +68,7 @@ export default function Services() {
               inwestycyjnej. Pełna analiza planistyczna, środowiskowa i formalna
               rekomendowana dla każdego projektu inwestycyjnego.
             </p>
-            <div className="text-sm text-white/50 mb-8">Realizacja: 2–3 tygodnie</div>
+            <div className="text-sm text-white/50 mb-8">Realizacja: do 4 tygodni</div>
             <a
               href="#wycena"
               className="block text-center font-semibold py-3.5 rounded-lg bg-white text-[#1b4332] hover:bg-[#95d5b2] transition-all duration-200 text-sm"
@@ -121,7 +121,7 @@ export default function Services() {
               analizy wykonalności po przygotowanie projektu do realizacji.
             </p>
             <div className="text-sm text-neutral-500 mb-8">
-              Wycena indywidualna
+              Harmonogram ustalany indywidualnie
             </div>
             <a
               href="#konsultacja"
