@@ -14,8 +14,8 @@ export default function Services() {
           <p className="text-neutral-600 mt-4 text-lg leading-relaxed whitespace-nowrap">
             Każda inwestycja zaczyna się od gruntu. Wybierz poziom analizy dopasowany do etapu Twojego projektu.
           </p>
-          <p className="text-neutral-600 mt-2 text-lg leading-relaxed whitespace-nowrap">
-            Nie wiesz, którego poziomu potrzebujesz? Zacznij od bezpłatnej konsultacji.
+          <p className="text-[#2d6a4f] mt-2 text-lg leading-relaxed whitespace-nowrap">
+            Nie wiesz, którego poziomu analizy potrzebujesz? Zacznij od bezpłatnej konsultacji.
           </p>
         </div>
 
