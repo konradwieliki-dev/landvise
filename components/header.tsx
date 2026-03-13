@@ -1,17 +1,22 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const solid = !isHome || scrolled;
 
   const navLinks = [
     { href: "#uslugi", label: "Usługi" },
@@ -24,7 +29,7 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
+        solid
           ? "bg-white/95 backdrop-blur-sm shadow-sm border-b border-neutral-100"
           : "bg-transparent"
       }`}
@@ -35,7 +40,7 @@ export default function Header() {
           <Link
             href="/"
             className={`text-xl font-bold tracking-tight transition-colors ${
-              scrolled ? "text-[#1c1917]" : "text-white"
+              solid ? "text-[#1c1917]" : "text-white"
             }`}
           >
             Land<span className="text-[#40916c]">Vise</span>
@@ -48,7 +53,7 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 className={`text-sm font-medium transition-colors hover:text-[#2d6a4f] ${
-                  scrolled ? "text-neutral-600" : "text-white/80"
+                  solid ? "text-neutral-600" : "text-white/80"
                 }`}
               >
                 {link.label}
@@ -60,7 +65,7 @@ export default function Header() {
           <a
             href="#konsultacja"
             className={`hidden lg:inline-flex items-center px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-200 ${
-              scrolled
+              solid
                 ? "bg-[#2d6a4f] text-white hover:bg-[#40916c]"
                 : "bg-white/10 backdrop-blur-sm border border-white/30 text-white hover:bg-white/20"
             }`}
@@ -71,7 +76,7 @@ export default function Header() {
           {/* Mobile burger */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className={`lg:hidden p-2 ${scrolled ? "text-[#1c1917]" : "text-white"}`}
+            className={`lg:hidden p-2 ${solid ? "text-[#1c1917]" : "text-white"}`}
             aria-label="Menu"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
