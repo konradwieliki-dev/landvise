@@ -63,7 +63,7 @@ export default function ConsultationForm() {
   };
 
   return (
-    <section id="konsultacja" className="relative pt-12 pb-24 lg:pt-16 lg:pb-32">
+    <section id="konsultacja" className="relative pt-12 pb-12 lg:pt-16 lg:pb-16">
       <div className="absolute inset-0">
         <img
           src="/konsultacja.png"
