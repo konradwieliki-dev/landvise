@@ -73,11 +73,11 @@ export default function Footer() {
             © 2026 LandVise. Wszelkie prawa zastrzeżone.
           </p>
           <div className="flex items-center gap-6">
-            <a href="#" className="text-white/30 hover:text-white/60 text-sm transition-colors">
+            <a href="/polityka-prywatnosci" className="text-white/30 hover:text-white/60 text-sm transition-colors">
               Polityka prywatności
             </a>
-            <a href="#" className="text-white/30 hover:text-white/60 text-sm transition-colors">
-              Regulamin
+            <a href="/polityka-cookies" className="text-white/30 hover:text-white/60 text-sm transition-colors">
+              Polityka cookies
             </a>
           </div>
         </div>
