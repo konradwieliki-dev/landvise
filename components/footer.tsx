@@ -26,8 +26,8 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#wycena" className="text-white/50 hover:text-[#40916c] text-sm transition-colors">
-                  Wycena
+                <a href="#doswiadczenie" className="text-white/50 hover:text-[#40916c] text-sm transition-colors">
+                  Doświadczenie
                 </a>
               </li>
               <li>
@@ -36,12 +36,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#konsultacja" className="text-white/50 hover:text-[#40916c] text-sm transition-colors">
-                  Konsultacja
-                </a>
-              </li>
-              <li>
-                <a href="#kontakt" className="text-white/50 hover:text-[#40916c] text-sm transition-colors">
+                <a href="/kontakt" className="text-white/50 hover:text-[#40916c] text-sm transition-colors">
                   Kontakt
                 </a>
               </li>

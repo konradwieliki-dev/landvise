@@ -37,13 +37,13 @@ export default function Services() {
               Realizacja: do 2 tygodni
             </div>
             <a
-              href="#konsultacja"
+              href="/kontakt"
               className="block text-center font-medium py-3 rounded-lg border border-[#2d6a4f] text-[#2d6a4f] hover:bg-[#2d6a4f] hover:text-white transition-all duration-200 text-sm"
             >
               Umów bezpłatną konsultację
             </a>
             <a
-              href="#wycena"
+              href="/kontakt"
               className="block text-center font-semibold py-3.5 rounded-lg bg-[#2d6a4f] text-white hover:bg-[#40916c] transition-all duration-200 text-sm mt-3"
             >
               Zapytaj o wycenę
@@ -70,13 +70,13 @@ export default function Services() {
             </p>
             <div className="text-sm text-white/50 mb-8">Realizacja: do 4 tygodni</div>
             <a
-              href="#wycena"
+              href="/kontakt"
               className="block text-center font-semibold py-3.5 rounded-lg bg-white text-[#1b4332] hover:bg-[#95d5b2] transition-all duration-200 text-sm"
             >
               Zapytaj o wycenę
             </a>
             <a
-              href="#konsultacja"
+              href="/kontakt"
               className="block text-center font-medium py-3 rounded-lg border border-white/30 text-white/80 hover:border-white/60 hover:text-white transition-all duration-200 text-sm mt-3"
             >
               Umów bezpłatną konsultację
@@ -100,7 +100,7 @@ export default function Services() {
               Harmonogram ustalany indywidualnie
             </div>
             <a
-              href="#konsultacja"
+              href="/kontakt"
               className="block text-center font-semibold py-3.5 rounded-lg bg-[#2d6a4f] text-white hover:bg-[#40916c] transition-all duration-200 text-sm mt-auto"
             >
               Umów konsultację
@@ -124,7 +124,7 @@ export default function Services() {
               Harmonogram ustalany indywidualnie
             </div>
             <a
-              href="#konsultacja"
+              href="/kontakt"
               className="block text-center font-semibold py-3.5 rounded-lg bg-[#2d6a4f] text-white hover:bg-[#40916c] transition-all duration-200 text-sm mt-auto"
             >
               Umów konsultację

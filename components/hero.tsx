@@ -28,13 +28,13 @@ export default function Hero() {
           <p className="text-base text-white/70 leading-relaxed mb-10 max-w-xl">
             Pomagamy inwestorom prywatnym, funduszom i firmom deweloperskim
             podejmować świadome decyzje o zakupie gruntów. Dzięki ponad
-            15-letniemu doświadczeniu w analizie i przygotowaniu nieruchomości
+            13-letniemu doświadczeniu w analizie i przygotowaniu nieruchomości
             do transakcji, wiemy, co naprawdę decyduje o sukcesie inwestycji.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="#wycena"
+              href="/kontakt"
               className="inline-flex items-center justify-center bg-[#2d6a4f] hover:bg-[#40916c] text-white font-semibold px-8 py-4 rounded-lg transition-all duration-200 text-base"
             >
               Wyślij zapytanie o wycenę
@@ -43,7 +43,7 @@ export default function Hero() {
               </svg>
             </a>
             <a
-              href="#konsultacja"
+              href="/kontakt"
               className="inline-flex items-center justify-center border border-white/30 hover:border-white/60 text-white font-medium px-8 py-4 rounded-lg transition-all duration-200 text-base"
             >
               Umów bezpłatną konsultację
@@ -52,8 +52,12 @@ export default function Hero() {
 
           <div className="flex flex-wrap gap-8 lg:gap-12 mt-16 pt-8 border-t border-white/10">
             <div>
-              <div className="text-3xl font-bold text-white">15+</div>
+              <div className="text-3xl font-bold text-white">13+</div>
               <div className="text-white/60 text-sm mt-1">Lat doświadczenia</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold text-white">1.2 mln m²</div>
+              <div className="text-white/60 text-sm mt-1">Przygotowanych gruntów</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-white">3</div>

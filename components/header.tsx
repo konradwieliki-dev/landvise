@@ -20,10 +20,9 @@ export default function Header() {
 
   const navLinks = [
     { href: "#uslugi", label: "Usługi" },
-    { href: "#wycena", label: "Wycena" },
+    { href: "#doswiadczenie", label: "Doświadczenie" },
     { href: "#wspolpraca", label: "Współpraca" },
-    { href: "#konsultacja", label: "Konsultacja" },
-    { href: "#kontakt", label: "Kontakt" },
+    { href: "/kontakt", label: "Kontakt" },
   ];
 
   return (
@@ -63,7 +62,7 @@ export default function Header() {
 
           {/* CTA */}
           <a
-            href="#konsultacja"
+            href="/kontakt"
             className={`hidden lg:inline-flex items-center px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-200 ${
               solid
                 ? "bg-[#2d6a4f] text-white hover:bg-[#40916c]"
@@ -104,7 +103,7 @@ export default function Header() {
             ))}
             <div className="px-4 pt-3">
               <a
-                href="#konsultacja"
+                href="/kontakt"
                 onClick={() => setMenuOpen(false)}
                 className="block text-center bg-[#2d6a4f] text-white font-semibold py-3 rounded-lg text-sm hover:bg-[#40916c] transition-colors"
               >
