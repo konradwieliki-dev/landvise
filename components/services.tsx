@@ -20,41 +20,43 @@ export default function Services() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
-          {/* Poziom 1 */}
-          <div className="relative rounded-2xl p-8 bg-[#fafaf9] border border-neutral-200 hover:shadow-lg hover:border-[#2d6a4f]/30 transition-all duration-300 flex flex-col">
-            <div className="text-xs font-semibold uppercase tracking-wider text-[#2d6a4f] mb-2">
-              Poziom 1
+          {/* Poziom 1 + link do raportu */}
+          <div className="flex flex-col">
+            <div className="relative rounded-2xl p-8 bg-[#fafaf9] border border-neutral-200 hover:shadow-lg hover:border-[#2d6a4f]/30 transition-all duration-300 flex flex-col flex-grow">
+              <div className="text-xs font-semibold uppercase tracking-wider text-[#2d6a4f] mb-2">
+                Poziom 1
+              </div>
+              <h3 className="text-xl font-bold text-[#1c1917] tracking-tight mb-4">
+                Wstępna identyfikacja kluczowych ryzyk
+              </h3>
+              <p className="text-sm text-neutral-600 leading-relaxed mb-6 flex-grow">
+                Wstępna ocena ryzyk inwestycyjnych, które mogą zablokować Twój
+                projekt. Zanim zaangażujesz większy budżet – sprawdź, czy warto
+                iść dalej.
+              </p>
+              <div className="text-sm text-neutral-500 mb-8">
+                Realizacja: do 2 tygodni
+              </div>
+              <a
+                href="/kontakt"
+                className="block text-center font-medium py-3 rounded-lg border border-[#2d6a4f] text-[#2d6a4f] hover:bg-[#2d6a4f] hover:text-white transition-all duration-200 text-sm"
+              >
+                Umów bezpłatną konsultację
+              </a>
+              <a
+                href="/kontakt"
+                className="block text-center font-semibold py-3.5 rounded-lg bg-[#2d6a4f] text-white hover:bg-[#40916c] transition-all duration-200 text-sm mt-3"
+              >
+                Zapytaj o wycenę
+              </a>
             </div>
-            <h3 className="text-xl font-bold text-[#1c1917] tracking-tight mb-4">
-              Wstępna identyfikacja kluczowych ryzyk
-            </h3>
-            <p className="text-sm text-neutral-600 leading-relaxed mb-6 flex-grow">
-              Wstępna ocena ryzyk inwestycyjnych, które mogą zablokować Twój
-              projekt. Zanim zaangażujesz większy budżet – sprawdź, czy warto
-              iść dalej.
-            </p>
-            <div className="text-sm text-neutral-500 mb-8">
-              Realizacja: do 2 tygodni
-            </div>
-            <a
-              href="/kontakt"
-              className="block text-center font-medium py-3 rounded-lg border border-[#2d6a4f] text-[#2d6a4f] hover:bg-[#2d6a4f] hover:text-white transition-all duration-200 text-sm"
-            >
-              Umów bezpłatną konsultację
-            </a>
-            <a
-              href="/kontakt"
-              className="block text-center font-semibold py-3.5 rounded-lg bg-[#2d6a4f] text-white hover:bg-[#40916c] transition-all duration-200 text-sm mt-3"
-            >
-              Zapytaj o wycenę
-            </a>
             <a
               href="/raport-poziom1-przyklad.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 text-[#2d6a4f] hover:text-[#40916c] text-xs font-medium mt-4 transition-colors"
+              className="flex items-center justify-center gap-2 text-[#2d6a4f] hover:text-[#40916c] text-xs font-medium mt-3 transition-colors"
             >
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
               </svg>
               Przykładowy raport dla Poziomu 1
