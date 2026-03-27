@@ -142,7 +142,7 @@ export default function ContactPageClient() {
   };
 
   return (
-    <div id="kontakt" className="pt-32 pb-20">
+    <div id="kontakt" className="pb-20">
       {/* Sekcja A: Formularz wyceny */}
       <section className="bg-[#fafaf9] pt-12 pb-12 lg:pt-16 lg:pb-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -501,7 +501,7 @@ export default function ContactPageClient() {
 
                   <div>
                     <label htmlFor="consult-message" className="block text-sm font-medium text-neutral-700 mb-1.5">
-                      Opis projektu
+                      Opis projektu (opcjonalnie)
                     </label>
                     <textarea
                       id="consult-message"

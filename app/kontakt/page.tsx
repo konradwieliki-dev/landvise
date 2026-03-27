@@ -7,5 +7,9 @@ export const metadata: Metadata = {
 };
 
 export default function KontaktPage() {
-  return <ContactPageClient />;
+  return (
+    <div className="pt-32">
+      <ContactPageClient />
+    </div>
+  );
 }
