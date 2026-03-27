@@ -19,10 +19,10 @@ export default function Header() {
   const solid = !isHome || scrolled;
 
   const navLinks = [
-    { href: "#uslugi", label: "Usługi" },
-    { href: "#doswiadczenie", label: "Doświadczenie" },
-    { href: "#wspolpraca", label: "Współpraca" },
-    { href: "/kontakt", label: "Kontakt" },
+    { href: "/#uslugi", label: "Usługi" },
+    { href: "/#doswiadczenie", label: "Doświadczenie" },
+    { href: "/#wspolpraca", label: "Współpraca" },
+    { href: "/#kontakt", label: "Kontakt" },
   ];
 
   return (
