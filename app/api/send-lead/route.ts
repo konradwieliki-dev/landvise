@@ -46,7 +46,7 @@ export async function POST(request: Request) {
 `;
 
   const { error } = await resend.emails.send({
-    from: "LandVise <onboarding@resend.dev>",
+    from: "LandVise <kontakt@landvise.pl>",
     to: "kontakt@landvise.pl",
     subject,
     html,
