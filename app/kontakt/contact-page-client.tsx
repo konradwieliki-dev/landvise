@@ -55,6 +55,16 @@ export default function ContactPageClient() {
 
       if (response.ok) {
         setQuoteStatus("success");
+        fetch("/api/track", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            event_type: "form_submit_wycena",
+            page: window.location.pathname,
+            session_id: sessionStorage.getItem("lv_sid") || "",
+            metadata: { level: payload.level },
+          }),
+        });
         (e.target as HTMLFormElement).reset();
       } else {
         setQuoteStatus("error");
@@ -108,6 +118,15 @@ export default function ContactPageClient() {
 
       if (response.ok) {
         setConsultStatus("success");
+        fetch("/api/track", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            event_type: "form_submit_konsultacja",
+            page: window.location.pathname,
+            session_id: sessionStorage.getItem("lv_sid") || "",
+          }),
+        });
         (e.target as HTMLFormElement).reset();
       } else {
         setConsultStatus("error");
@@ -135,6 +154,15 @@ export default function ContactPageClient() {
         body: JSON.stringify({ type: "kontakt", ...payload }),
       });
       setContactStatus("success");
+      fetch("/api/track", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          event_type: "form_submit_kontakt",
+          page: window.location.pathname,
+          session_id: sessionStorage.getItem("lv_sid") || "",
+        }),
+      });
       (e.target as HTMLFormElement).reset();
     } catch {
       setContactStatus("error");

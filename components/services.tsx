@@ -26,6 +26,16 @@ export default function Services() {
       // fail silently — still allow download
     }
     window.open("/raport-poziom1-przyklad.pdf", "_blank");
+    fetch("/api/track", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        event_type: "raport_download",
+        page: window.location.pathname,
+        session_id: sessionStorage.getItem("lv_sid") || "",
+        metadata: { email: reportEmail },
+      }),
+    });
     setSending(false);
     setShowModal(false);
     setReportEmail("");
