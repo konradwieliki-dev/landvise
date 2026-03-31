@@ -438,7 +438,7 @@ async function handleReport(request: Request) {
   const html = buildReportHtml(period, range.current.label, currentData, previousData, range.current.label, range.previous.label);
 
   const { error } = await resend.emails.send({
-    from: "LandVise <onboarding@resend.dev>",
+    from: "LandVise <kontakt@landvise.pl>",
     to: "kontakt@landvise.pl",
     subject,
     html,
