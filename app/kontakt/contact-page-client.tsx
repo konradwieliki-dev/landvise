@@ -627,7 +627,14 @@ export default function ContactPageClient() {
                   </div>
                   <div>
                     <p className="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-0.5">LinkedIn</p>
-                    <span className="text-neutral-400 text-sm">Wkrótce</span>
+                    <a
+                      href="https://www.linkedin.com/company/landviseadvisory/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#2d6a4f] hover:underline text-sm font-medium"
+                    >
+                      LandVise Advisory
+                    </a>
                   </div>
                 </div>
               </div>
